@@ -16,6 +16,9 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = '>= 1.3.6'
   s.rubyforge_project         = 'rixius'
 
+  s.add_dependency "sinatra"
+  s.add_dependency "data_mapper"
+
   s.files         = Dir.glob("{bin,lib}/**/*") + %W(LICENSE README.md)
   s.executables   = []
   s.require_path  = 'lib'

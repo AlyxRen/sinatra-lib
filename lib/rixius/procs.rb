@@ -5,11 +5,3 @@ module Rixius
     end
   end
 end
-
-class Symbol
-  def to_proc
-    Proc.new do |x|
-      x.send self
-    end
-  end
-end
