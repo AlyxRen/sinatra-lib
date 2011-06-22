@@ -17,7 +17,9 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = 'rixius'
 
   s.add_dependency "sinatra"
+  s.add_dependency "haml"
   s.add_dependency "data_mapper"
+  s.add_dependency "aws-s3"
 
   s.files         = Dir.glob("{bin,lib}/**/*") + %W(LICENSE README.md)
   s.executables   = []
